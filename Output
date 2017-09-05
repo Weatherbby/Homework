@@ -1,0 +1,14 @@
+
+public class Output {
+	public static String output(String uI,int cowsCount, int bullsCount) {
+		String answ = "";
+		answ = bullsCount + " bulls " + (cowsCount-bullsCount) + " cows";
+		System.out.println(answ );
+		if(bullsCount < 4) {
+			System.out.println("Enter your guess");
+		}else {
+			System.out.print("");
+		}
+		return answ;
+	}
+}
