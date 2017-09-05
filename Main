@@ -1,0 +1,20 @@
+public class Main {
+	public static void main(String[] args) {		
+		String randomInts = Generator.randomNum();
+		//System.out.println(randomInts);
+		//String uI1 = Input_Output.userInp(randomInts);
+		//int countBulls = Bulls.bullsCount(randomInts, uI1);
+		//int countCows = Cows.cowsCount(randomInts, uI1);
+		//String answ = Output.output(randomInts, countCows, countBulls);
+		while (true) {
+			String uILoop = Input.userInp(randomInts);
+			int countBullsLoop = Bulls.bullsCount(randomInts, uILoop);
+			int countCowsLoop = Cows.cowsCount(randomInts, uILoop);
+			String answLoop = Output.output(randomInts, countCowsLoop, countBullsLoop);
+			if(answLoop.equals("4 bulls 0 cows")) {
+				System.out.println("You won");
+				break;
+			}
+		}
+	}
+}
