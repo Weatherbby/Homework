@@ -1,0 +1,13 @@
+
+public class Cows {
+	public static int cowsCount(String randomInts, String uI) {
+		int cows = 0;
+		for(int i = 0; i < uI.length(); i++) {
+			if (uI.indexOf(randomInts.charAt(i)) >= 0) {
+					cows = cows + 1;
+			}
+		}
+		return cows;
+		
+	}
+}
